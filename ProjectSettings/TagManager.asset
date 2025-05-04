@@ -5,11 +5,14 @@ TagManager:
   serializedVersion: 3
   tags:
   - Anchor
+  - ground
+  - dead
+  - balloon
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - floor
   - Water
   - UI
   - 
