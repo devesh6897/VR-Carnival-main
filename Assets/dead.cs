@@ -1,14 +1,21 @@
 using UnityEngine;
 
-public class TeleportOnDeadCollision : MonoBehaviour
+public class TeleportOnTrigger : MonoBehaviour
 {
-    [SerializeField] private Transform targetObject; // Assign this in the Inspector
+    public Transform teleportTarget; // Assign the destination transform in Inspector
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Dead") && targetObject != null)
+        if (other.CompareTag("Player") || other.CompareTag("PlayerController"))
         {
-            transform.position = targetObject.position;
+            if (teleportTarget != null)
+            {
+                other.transform.position = teleportTarget.position;
+            }
+            else
+            {
+                Debug.LogWarning("Teleport target is not assigned.");
+            }
         }
     }
 }

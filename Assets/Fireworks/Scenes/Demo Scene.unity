@@ -337,7 +337,7 @@ Terrain:
   m_GameObject: {fileID: 514273637}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 9b411c84bf1cea541a2b2605be2dd48a, type: 2}
+  m_TerrainData: {fileID: 0}
   m_TreeDistance: 2000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -492,6 +492,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 199594751955378448, guid: 948739ea3abe92643838172763edbb94, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -601,7 +605,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1538249486}
   - component: {fileID: 1538249485}
-  - component: {fileID: 1538249483}
   - component: {fileID: 1538249482}
   m_Layer: 0
   m_Name: Main Camera
@@ -612,14 +615,6 @@ GameObject:
   m_IsActive: 1
 --- !u!81 &1538249482
 AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538249481}
-  m_Enabled: 1
---- !u!124 &1538249483
-Behaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
